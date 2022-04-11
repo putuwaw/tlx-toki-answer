@@ -1,0 +1,5 @@
+N, M = input().split()
+A = int(N) // int(M)
+B = int(N) % int(M)
+print(f'masing-masing {A}')
+print(f'bersisa {B}')
