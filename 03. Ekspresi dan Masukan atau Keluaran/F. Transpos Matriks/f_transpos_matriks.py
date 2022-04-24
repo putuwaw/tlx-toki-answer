@@ -1,0 +1,6 @@
+A,B,C = input().split()
+D,E,F = input().split()
+G,H,I = input().split()
+print(A,D,G)
+print(B,E,H)
+print(C,F,I)
