@@ -1,26 +1,23 @@
 fn main() {
     let mut reader = String::new();
     std::io::stdin().read_line(&mut reader).expect("");
-    let n = reader.trim().parse().expect("");
+    let n: i32 = reader.trim().parse().expect("");
     let mut reader = String::new();
     std::io::stdin().read_line(&mut reader).expect("");
-    let mut a = 0;
-    let mut b = 0;
-    let v: Vec<i32> = reader
-        .trim()
-        .split(" ")
-        .map(|x| x.parse::<i32>().expect(""))
-        .collect();
+    let mut substr_iter = reader.split_whitespace();
+    let mut next_num = || -> i32 { substr_iter.next().expect("").parse().expect("") };
+    let (mut a, mut b): (i32, i32) = (0, 0);
     for i in 0..n {
+        let num = next_num();
         if i == 0 {
-            a = v[i];
-            b = v[i];
+            a = num;
+            b = num;
         } else {
-            if v[i] > a {
-                a = v[i];
+            if num > a {
+                a = num;
             }
-            if v[i] < b {
-                b = v[i];
+            if num < b {
+                b = num;
             }
         }
     }
