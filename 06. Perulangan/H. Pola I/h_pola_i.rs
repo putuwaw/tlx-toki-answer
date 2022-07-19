@@ -14,7 +14,7 @@ fn main() {
         if i != n {
             print!(" ");
         } else {
-            println!("");
+            print!("\n");
         }
     }
 }
