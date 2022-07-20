@@ -10,7 +10,8 @@ begin
     for i := 1 to M do begin
         for j := N downto 1 do begin
             write(arr[j,i]);
-            if (j > 1) then write(' ');
+            if (j > 1) then
+                write(' ');
         end;
         writeln();
     end;
