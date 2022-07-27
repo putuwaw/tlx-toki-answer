@@ -14,7 +14,6 @@ class b_tukang_sulap {
         myarr.arr[Q][y] = temp;
     }
     public static void main(String[] args) {
-        // int[][] arr = new int[2][1001];
         array myarr = new array();
         Scanner scan = new Scanner(System.in);
         int N = scan.nextInt();
