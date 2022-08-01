@@ -38,7 +38,10 @@ fn main() {
     }
     for i in 0..2 {
         for j in 0..n {
-            print!("{} ", arr[i as usize][j as usize]);
+            print!("{}", arr[i as usize][j as usize]);
+            if j < n - 1 {
+                print!(" ");
+            }
         }
         println!("");
     }
