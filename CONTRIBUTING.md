@@ -8,9 +8,9 @@ You can raise issues on the Github Issues tab. Issues can be submissions that do
 1. If you want to change the code, make sure you change it on the correct branch. 
 2. The branches used are:
 ```
-pkd-chapter-problem
+pd-chapter-problem
 ```
 3. For example, if you want to change the solution of chapter 11 problem B, make sure you work on branch:
 ```
-pkd-11-b
+pd-11-b
 ```
